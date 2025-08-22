@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SenqWeb</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border: solid 0px red;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background: #222;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px auto 40px;
+      }
+
+      .header {
+        background: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      .header .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .header .brand h3 {
+        color: #fff;
+      }
+
+      .header .brand .image {
+        width: 30px;
+        height: 30px;
+        background: url("https://files.catbox.moe/ig53fh.jpg");
+        background-size: cover;
+        border-radius: 50%;
+      }
+
+      .header .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .nav ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        color: #fff;
+      }
+      
+      .footer {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+      }
+      
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .content h1 {
+        color: #fff;
+      }
+      
+      .content ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+        height: auto;
+      }
+      
+      .content ul li {
+        width: 80%;
+        height: 50px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: #555;
+        border-left: solid 3px #10ff10;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        padding: 0 15px;
+        justify-content: start;
+        align-items: center;
+        list-style: none;
+      }
+      
+        * {
+        border: solid 0px red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="brand">
+          <div class="image"></div>
+          <h3>Senq Store</h3>
+        </div>
+        <div class="nav">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+          <h1>List Sewa Bot</h1>
+        <ul>
+          <li>1 Hari Rp 1.000</li>
+          <li>5 Hari Rp 5.000</li>
+          <li>10 Hari Rp 10.000</li>
+          <li>30 Hari Rp 30.000</li>
+          <li>Perma Rp 100.000</li>
+        </ul>
+      </div>
+      <div class="footer">
+        <p>© Senq Store • 2025</p>
+      </div>
+    </div>
+  </body>
+</html>
